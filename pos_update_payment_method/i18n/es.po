@@ -1,0 +1,103 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* pos_update_payment_method
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-16 12:10+0000\n"
+"PO-Revision-Date: 2020-01-16 12:10+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard_available_journal_ids
+msgid "Available journals"
+msgstr "Diarios disponibles"
+
+#. module: pos_update_payment_method
+#: model:ir.model,name:pos_update_payment_method.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Línea de extracto bancario"
+
+#. module: pos_update_payment_method
+#: model:ir.ui.view,arch_db:pos_update_payment_method.pos_update_payment_method_wizard_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: pos_update_payment_method
+#: model:ir.ui.view,arch_db:pos_update_payment_method.view_bank_statement_line_form_palmatrend
+msgid "Change Payment Method"
+msgstr "Cambiar Método de Pago"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard_journal_id
+msgid "Journal"
+msgstr "Diario"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: pos_update_payment_method
+#: model:ir.model.fields,field_description:pos_update_payment_method.field_pos_update_payment_method_wizard_pos_statement_line_id
+msgid "Payment"
+msgstr "Pago"
+
+#. module: pos_update_payment_method
+#: model:ir.ui.view,arch_db:pos_update_payment_method.pos_update_payment_method_wizard_view
+msgid "Update Payment"
+msgstr "Cambiar Método de Pago"
+
+#. module: pos_update_payment_method
+#: code:addons/pos_update_payment_method/wizard/pos_update_payment_method.py:37
+#, python-format
+msgid "You can only change payment of paid tickets."
+msgstr "Solo se pueden cambiar los métodos de pago de los tíquets en estado pagado."
+
+#. module: pos_update_payment_method
+#: model:ir.model,name:pos_update_payment_method.model_pos_update_payment_journal_wizard
+msgid "pos.update.payment.journal.wizard"
+msgstr "pos.update.payment.journal.wizard"
+
+#. module: pos_update_payment_method
+#: model:ir.model,name:pos_update_payment_method.model_pos_update_payment_method_wizard
+msgid "pos.update.payment.method.wizard"
+msgstr "pos.update.payment.method.wizard"
+

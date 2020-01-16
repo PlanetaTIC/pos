@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 PlanetaTIC - Marc Poch <mpoch@planetatic.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<data>
+
+<record id="pos_update_payment_method_wizard_view" model="ir.ui.view">
+    <field name="name">POS Update Payment Method Wizard</field>
+    <field name="model">pos.update.payment.method.wizard</field>
+    <field name="arch" type="xml">
+        <form>
+            <div>
+                <group>
+                    <field name="available_journal_ids" invisible="1" />
+                    <field name="journal_id" domain="[('id', 'in', available_journal_ids and available_journal_ids[0] and available_journal_ids[0][2])]" />
+                </group>
+            </div>
+            <footer>
+                <button name="pos_update_payment" string="Update Payment" type="object" class="btn-primary" />
+                <button string="Cancel" class="btn-default" special="cancel" />
+            </footer>
+        </form>
+    </field>
+</record>
+
+</data>
+</odoo>

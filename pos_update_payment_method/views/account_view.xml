@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 PlanetaTIC - Marc Poch <mpoch@planetatic.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<data>
+
+<record id="view_bank_statement_line_form_palmatrend" model="ir.ui.view">
+    <field name="name">bank.statement.line.form.palmatrend</field>
+    <field name="model">account.bank.statement.line</field>
+    <field name="inherit_id" ref="account.view_bank_statement_line_form"/>
+    <field name="arch" type="xml">
+        <field name="note" position="before">
+            <field name="pos_order_state" invisible="1" />
+            <field name="journal_id"/>
+        </field>
+        <xpath expr="/form/*" position="before">
+            <header>
+                <button name="open_pos_update_payment_wizard" string="Change Payment Method" type="object" attrs="{'invisible': [('pos_order_state', '!=', 'paid')]}" class="oe_inline" style="margin-left: 12px;"/>
+            </header>
+        </xpath>
+    </field>
+</record>
+
+</data>
+</odoo>
