@@ -20,11 +20,8 @@ class CashInvoiceIn(models.TransientModel):
     def default_journals(self, active_model, active_ids):
         if active_model == 'pos.session':
             active = self.env[active_model].browse(active_ids)
-            if not active.cash_register_id:
-                raise UserError(_(
-                    "There is no cash register for this Pos session"
-                ))
-            return active.cash_register_id.journal_id
+            return self.env['account.journal'].browse(
+                [r.journal_id.id for r in active.statement_ids])
         return super(CashInvoiceIn, self).default_journals(
             active_model, active_ids
         )
